@@ -38,7 +38,7 @@ jobs:
       uses: foxtrotperry/fetch-file-action@v0-alpha
       with:
         url: 'https://github.com/NTX-Krypton/Toolkit/releases/latest/download/ComponentFactory.Krypton.Toolkit.dll'
-        path: ${{env.GITHUB_WORKSPACE}}
+        path: ${{github.workspace}}
         filename: 'ComponentFactory.Krypton.Toolkit.dll'
 
     - name: Fetch dependency NTX-Krypton/Navigator
