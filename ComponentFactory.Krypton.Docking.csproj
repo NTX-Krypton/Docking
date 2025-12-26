@@ -43,8 +43,8 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Bin\</OutputPath>
-    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <OutputPath>dist\</OutputPath>
+    <BaseIntermediateOutputPath>build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -57,8 +57,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\Bin\</OutputPath>
-    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <OutputPath>dist\</OutputPath>
+    <BaseIntermediateOutputPath>build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -183,7 +183,7 @@
       <Project>{96ecaecc-54f8-4aa5-8591-b443c2d9565f}</Project>
       <Name>ComponentFactory.Krypton.Toolkit</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace.csproj">
+    <ProjectReference Include="..\Workspace\ComponentFactory.Krypton.Workspace.csproj">
       <Project>{9144ba04-155b-4b66-b85a-9a89aa93f7d4}</Project>
       <Name>ComponentFactory.Krypton.Workspace</Name>
     </ProjectReference>
