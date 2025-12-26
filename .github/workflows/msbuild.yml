@@ -46,12 +46,12 @@ jobs:
       with:
         url: 'https://github.com/NTX-Krypton/Navigator/releases/latest/download/ComponentFactory.Krypton.Navigator.dll'
         path: ${{github.workspace}}
-        filename: 'ComponentFactory.Krypton.Toolkit.dll'
+        filename: 'ComponentFactory.Krypton.Navigator.dll'
 
     - name: Fetch dependency NTX-Krypton/Workspace
       uses: foxtrotperry/fetch-file-action@v0-alpha
       with:
-        url: 'https://github.com/NTX-Krypton/Toolkit/releases/latest/download/ComponentFactory.Krypton.Workspace.dll'
+        url: 'https://github.com/NTX-Krypton/Workspace/releases/latest/download/ComponentFactory.Krypton.Workspace.dll'
         path: ${{github.workspace}}
         filename: 'ComponentFactory.Krypton.Workspace.dll'
 
